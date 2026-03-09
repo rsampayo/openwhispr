@@ -72,6 +72,7 @@
     "name": "OpenWhispr Team",
     "email": "support@openwhispr.com"
   },
+  "homepage": "https://whispr.ka-ve.io",
   "license": "MIT",
   "devDependencies": {
     "@electron/notarize": "^3.0.1",
