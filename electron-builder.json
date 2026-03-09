@@ -111,14 +111,12 @@
   ],
   "mac": {
     "category": "public.app-category.productivity",
-    "target": ["dmg", "zip"],
+    "target": [{"target": "zip", "arch": ["x64", "arm64"]}],
     "icon": "src/assets/icon.icns",
     "gatekeeperAssess": false,
-    "hardenedRuntime": true,
-    "entitlements": "resources/mac/entitlements.mac.plist",
-    "entitlementsInherit": "resources/mac/entitlements.mac.plist",
-    "identity": "HeroTools Inc. (9R85XFMH59)",
-    "notarize": true,
+    "hardenedRuntime": false,
+    "identity": null,
+    "notarize": false,
     "extendInfo": {
       "LSUIElement": false,
       "NSMicrophoneUsageDescription": "OpenWhispr needs microphone access for speech-to-text transcription.",
@@ -126,7 +124,7 @@
     }
   },
   "win": {
-    "target": ["nsis", "portable"],
+    "target": ["nsis"],
     "icon": "src/assets/icon.ico",
     "extraResources": [
       {
@@ -136,7 +134,7 @@
     ]
   },
   "linux": {
-    "target": ["AppImage", "deb", "rpm", "tar.gz"],
+    "target": ["deb"],
     "icon": "src/assets/icon.png",
     "category": "Utility",
     "artifactName": "${productName}-${version}-${os}-${arch}.${ext}"
