@@ -1,6 +1,7 @@
 {
   "appId": "com.herotools.openwispr",
   "productName": "OpenWhispr",
+  "homepage": "https://whispr.ka-ve.io",
   "protocols": {
     "name": "OpenWhispr Protocol",
     "schemes": ["openwhispr"]
